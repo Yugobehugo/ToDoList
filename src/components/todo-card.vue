@@ -5,6 +5,8 @@
             <h1>VueJs Tutorial ToDo List</h1>
              <p v-if="nbTasks <=1" >{{ nbTasks }} Tâche</p> <!-- Si il ya 0 ou 1 tache, "tache" ne prend pas de "s" -->
             <p v-if="nbTasks >1" >{{ nbTasks }} Tâches</p> <!-- Si il ya 2 tâches ou plus, "taches" prend un "s" -->
+            <p>Tâches</p>
+            
         </header>
         
             <new-todo @new-todo-task="saveTask" ></new-todo>
